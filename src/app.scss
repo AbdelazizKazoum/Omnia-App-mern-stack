@@ -1,0 +1,64 @@
+
+/* Library */
+:root{
+    --primary-color : #4D54E4 ; 
+    --secendary-color : #8C91F8 ;
+    --primary-background-color : #FFFFFF ;
+    --background-color : #F8F9FD ;
+    --border-shadow : #F6F6F6 ;
+    --border-radius : 10px ; 
+    --font-color : #666973 ;
+}
+
+
+.app{
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px gray;
+
+
+    .row{
+        height: 100%;
+    }
+}
+
+
+// xs screens
+@media (max-width :  576px)   {
+    .app{
+        :nth-child(1) {
+            min-width: 60px !important;
+        }
+        .logo{
+            margin-top: 1rem;
+        }
+    }
+}
+// sm screens
+@media (max-width :  576px)  {
+    .app{
+        
+        :nth-child(1) {
+            min-width: 60px !important;
+        }
+        .logo{
+            margin-top: 1rem;
+        }
+    }
+}
+//md screens
+@media (max-width :  768px)  {
+        .app{
+            :nth-child(1) {
+            min-width: 60px !important;
+        }
+        .logo{
+            margin-top: 1rem;
+        }
+    }
+    
+}
+// large screens
+@media (min-width :  992px)  {
+
+}

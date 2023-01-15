@@ -1,0 +1,48 @@
+
+
+.navmenu{
+    background-color: var(--primary-background-color);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    color: var(--font-color);
+    p{
+        margin: 0;
+    }
+    form{
+        height: 95%;
+        width: 40%;
+        max-width: 400px;
+        background-color: var(--background-color);
+        border-radius: var(--border-radius);
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+        input , button {
+            color: gray;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            outline: none;
+        }
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+        svg {
+            cursor: pointer;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}

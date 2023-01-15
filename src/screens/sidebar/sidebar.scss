@@ -1,0 +1,102 @@
+
+.sidebar{
+    background-color: var(--primary-background-color);
+    height: 100%;
+    border-right: 3px solid var(--border-shadow);
+
+    .logo {
+        cursor: pointer;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        width: 80%;
+        p{
+            margin: 10px;
+        }
+    }
+    //----------- start menu -----------
+    .menu{
+        margin-top: 2rem;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+            .item{
+                margin: 5px;
+                padding: 10px;
+                border-radius: var(--border-radius);
+                width: 80%;
+                max-width: 180px;
+                min-width: 40px !important;
+                line-height: 1;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--primary-color);
+                    a{
+                        color: var(--primary-color);
+                    }
+                }
+
+                &.act{
+                    background-color: var(--primary-color);
+                    color: var(--primary-background-color);
+                    a{
+                        color: var(--primary-background-color);
+
+                    }
+
+                }
+
+                a{
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: var(--font-color);
+                }
+            
+        }
+    }
+
+}
+
+
+//Media queries
+// xs screens
+@media (max-width :  576px)   {
+    .sidebar{
+        .menu{
+            font-size: 14px;
+        }
+
+    }
+}
+// sm screens
+@media (max-width :  768px)  {
+    .sidebar{
+            .menu{
+
+            .item{
+                display: flex;
+                justify-content: center;
+                min-width :40px ;
+                border-radius: 0px;
+                font-size: 16px;
+            }
+
+            .option{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width :  900px)   {
+    .sidebar{
+        .menu{
+            font-size: 14px;
+        }
+
+    }
+}
