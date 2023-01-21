@@ -58,8 +58,8 @@ export const Sidebar = () => {
             <Link>Settings</Link>
             </LinkContainer> 
         </li>
-
       </ul>
+      <hr style={{width : '70%', margin : " 3rem auto"}}  />
 
     </div>
   )

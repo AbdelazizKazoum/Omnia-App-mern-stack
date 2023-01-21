@@ -1,40 +1,27 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
+import { SmallProfile } from '../../components/profile/SmallProfile';
 import './clients.scss';
+import {AiOutlineMore} from 'react-icons/ai';
+import {IoIosAddCircleOutline} from 'react-icons/io';
+import ClientForm from '../../components/forms/clientForm/ClientForm';
+
+
 
 export const Clients = () => {
+  let active = 2;
+  let items = [];
   return (
-    <div>
+    <div className='clients'>
       <h3 className='mb-3'>Clinets</h3>
       <div className='table-container'>
-      <Table striped>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Orders</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Abdelaziz kazoum</td>
-          <td>10</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>Ali hassan</td>
-          <td>2</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td colSpan={1}>Larry the Bird</td>
-          <td >20</td>
-          <td colSpan={1}>...</td>
+      <Button className='add' style={{marginBottom:"1rem",float : 'right'}} >
+        Add <IoIosAddCircleOutline style={{fontSize : '20px'}} />
+      </Button>
+      <div className='container'>
 
-        </tr>
-      </tbody>
-    </Table>
       </div>
+    </div>
     </div>
   )
 }

@@ -10,7 +10,7 @@ const App = () =>{
                 <Col xs="1" sm="1" md="2"    className="p-0 m-0" >
                   <Sidebar />
                 </Col>
-                <Col   className="p-0 m-0">
+                <Col xs={10}  className="p-0 m-0">
                     <Body />
                 </Col>
             </Row>
